@@ -1,0 +1,20 @@
+name = "surf-odyssey"
+account_id = "ae17de9c545c86193ee4a26cee0b2625"
+main = "workers/index.ts"
+compatibility_date = "2025-08-22"
+
+[site]
+bucket = "./dist"
+
+[observability]
+enabled = true
+
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "my-new-db"         change to your database name
+# database_id = "xxxx-xxxx-xxxx"      replace with your database id
+# migrations_dir = "workers/db/migrations"
+
+[vars]
+ACCESS_TOKEN_EXPIRES_IN = "3600"
+REFRESH_TOKEN_EXPIRES_IN = "604800"
